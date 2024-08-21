@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
+import { Socials } from "~/components/socials";
 
 export const meta: MetaFunction = () => {
   return [
@@ -84,13 +85,14 @@ export default function Index() {
         <div className="font-sans p-4 grid grid-cols-1">
           <div className="max-w-7xl m-4 flex justify-center">
             <div className="flex flex-col text-center">
-              <h1 className="text-4xl">Nick Culpin</h1>
-              <p className="text-md italic">
+              <h1 className="text-4xl font-bold">Nick Culpin</h1>
+              <p className="text-md italic mt-4">
                 Software Engineer, Game Designer, Artist
               </p>
+              <Socials />
             </div>
           </div>
-          <div className="max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <div className="max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8">
             {cards.map(function (card) {
               return (
                 <Link key={card.id} to={card.path}>
@@ -122,6 +124,14 @@ export default function Index() {
                 </Link>
               );
             })}
+          </div>
+          <div className="max-w-7xl m-4 flex justify-center">
+            <div className="flex flex-col text-center">
+              <p className="text-md italic mt-4">
+                nickculpin.com copyright {new Date().getFullYear()} all rights
+                reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>
