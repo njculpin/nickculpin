@@ -86,39 +86,35 @@ const experience = [
     date: "2019 to current",
     type: "work",
     title: "Kaimo",
-    description:
-      "Kaimo provides large scale automation services for product visualization in the print on demand industry",
+    description: "Founder, Engineering Lead",
   },
   {
     id: 1,
     date: "2015 to 2019",
     type: "work",
     title: "MatchCo Shiseido",
-    description:
-      "The MatchCo group developed custom foundation for various brands under the Shiseido umbrella",
+    description: "Software Engineer, iOS & React Native",
   },
   {
     id: 2,
     date: "2014-2019",
     type: "work",
     title: "Travelear",
-    description:
-      "Travelear provided a platform for professional Audio Engineers to showcase binaural audio soundscapes across web and mobile",
+    description: "Founder, Engineering Lead",
   },
   {
     id: 3,
     date: "2011-2015",
     type: "work",
     title: "Zazzle",
-    description: "Zazzle provides large scale print on demand services",
+    description: "Product Systems Engineer",
   },
   {
     id: 4,
     date: "2010-2011",
     type: "work",
     title: "Vector Entertainment",
-    description:
-      "Vector Entertainment is a game publisher who developed Vector City Racers, a racing mmo for kids",
+    description: "3D Artist and Designer",
   },
 ];
 
@@ -190,64 +186,66 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="max-w-7xl mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
-            <div className="flex flex-col text-center">
-              <h1 className="text-2xl font-bold">Experience</h1>
-            </div>
-            <ul role="list" className="space-y-6 mt-4">
-              {experience.map((activityItem) => (
-                <li key={activityItem.id} className="relative flex gap-x-4">
-                  <div className="flex-auto rounded-md p-3">
-                    <div className="flex justify-between gap-x-4">
-                      <div className="py-0.5 text-xs leading-5 text-gray-500">
-                        <span className="font-medium text-gray-900">
-                          {activityItem.title}
-                        </span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="max-w-7xl mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
+              <div className="flex flex-col text-center">
+                <h1 className="text-2xl font-bold">Experience</h1>
+              </div>
+              <ul role="list" className="space-y-6 mt-4">
+                {experience.map((activityItem) => (
+                  <li key={activityItem.id} className="relative flex gap-x-4">
+                    <div className="flex-auto rounded-md p-3">
+                      <div className="flex justify-between gap-x-4">
+                        <div className="py-0.5 text-xs leading-5 text-gray-500">
+                          <span className="font-medium text-gray-900">
+                            {activityItem.title}
+                          </span>
+                        </div>
+                        <time
+                          dateTime={activityItem.date}
+                          className="flex-none py-0.5 text-xs leading-5 text-gray-500"
+                        >
+                          {activityItem.date}
+                        </time>
                       </div>
-                      <time
-                        dateTime={activityItem.date}
-                        className="flex-none py-0.5 text-xs leading-5 text-gray-500"
-                      >
-                        {activityItem.date}
-                      </time>
+                      <p className="text-sm leading-6 text-gray-500">
+                        {activityItem.description}
+                      </p>
                     </div>
-                    <p className="text-sm leading-6 text-gray-500">
-                      {activityItem.description}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          <div className="max-w-7xl mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
-            <div className="flex flex-col text-center">
-              <h1 className="text-2xl font-bold">Education</h1>
-            </div>
-            <ul role="list" className="space-y-6 mt-4">
-              {education.map((activityItem) => (
-                <li key={activityItem.id} className="relative flex gap-x-4">
-                  <div className="flex-auto rounded-md p-3">
-                    <div className="flex justify-between gap-x-4">
-                      <div className="py-0.5 text-xs leading-5 text-gray-500">
-                        <span className="font-medium text-gray-900">
-                          {activityItem.title}
-                        </span>
+            <div className="max-w-7xl mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
+              <div className="flex flex-col text-center">
+                <h1 className="text-2xl font-bold">Education</h1>
+              </div>
+              <ul role="list" className="space-y-6 mt-4">
+                {education.map((activityItem) => (
+                  <li key={activityItem.id} className="relative flex gap-x-4">
+                    <div className="flex-auto rounded-md p-3">
+                      <div className="flex justify-between gap-x-4">
+                        <div className="py-0.5 text-xs leading-5 text-gray-500">
+                          <span className="font-medium text-gray-900">
+                            {activityItem.title}
+                          </span>
+                        </div>
+                        <time
+                          dateTime={activityItem.date}
+                          className="flex-none py-0.5 text-xs leading-5 text-gray-500"
+                        >
+                          {activityItem.date}
+                        </time>
                       </div>
-                      <time
-                        dateTime={activityItem.date}
-                        className="flex-none py-0.5 text-xs leading-5 text-gray-500"
-                      >
-                        {activityItem.date}
-                      </time>
+                      <p className="text-sm leading-6 text-gray-500">
+                        {activityItem.description}
+                      </p>
                     </div>
-                    <p className="text-sm leading-6 text-gray-500">
-                      {activityItem.description}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div className="max-w-7xl m-4 flex justify-center">
