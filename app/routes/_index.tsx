@@ -24,6 +24,8 @@ const cards = [
       "NodeJs",
       "Three-Fiber",
       "React",
+      "Polygon",
+      "Web3",
       "Game Design",
     ],
   },
@@ -46,7 +48,7 @@ const cards = [
     title: "Kaimo / Art2Cart",
     image: "/kaimo.png",
     path: "/kaimo",
-    tags: ["Typescript", "Express", "NodeJs", "React"],
+    tags: ["Typescript", "Express", "NodeJs", "React", "Polygon", "Web3"],
   },
   {
     id: 4,
@@ -78,6 +80,65 @@ const cards = [
   },
 ];
 
+const experience = [
+  {
+    id: 0,
+    date: "2019 to current",
+    type: "work",
+    title: "Kaimo",
+    description:
+      "Kaimo provides large scale automation services for product visualization in the print on demand industry",
+  },
+  {
+    id: 1,
+    date: "2015 to 2019",
+    type: "work",
+    title: "MatchCo Shiseido",
+    description:
+      "The MatchCo group developed custom foundation for various brands under the Shiseido umbrella",
+  },
+  {
+    id: 2,
+    date: "2014-2019",
+    type: "work",
+    title: "Travelear",
+    description:
+      "Travelear provided a platform for professional Audio Engineers to showcase binaural audio soundscapes across web and mobile",
+  },
+  {
+    id: 3,
+    date: "2011-2015",
+    type: "work",
+    title: "Zazzle",
+    description: "Zazzle provides large scale print on demand services",
+  },
+  {
+    id: 4,
+    date: "2010-2011",
+    type: "work",
+    title: "Vector Entertainment",
+    description:
+      "Vector Entertainment is a game publisher who developed Vector City Racers, a racing mmo for kids",
+  },
+];
+
+const education = [
+  {
+    id: 0,
+    date: "2006-2010",
+    type: "education",
+    title: "Academy of Art University",
+    description: "MFA - Animation & VFX, emphasis in 3D modeling",
+  },
+  {
+    id: 1,
+    date: "2002-2006",
+    type: "education",
+    title: "University of Hartford Art School",
+    description: "BFA - Illustration",
+  },
+];
+
 export default function Index() {
   return (
     <div className="p-8 bg-slate-100">
@@ -92,39 +153,103 @@ export default function Index() {
               <Socials />
             </div>
           </div>
-          <div className="max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8">
-            {cards.map(function (card) {
-              return (
-                <Link key={card.id} to={card.path}>
-                  <div className="m-4 p-8 border border-gray-100 rounded-lg hover:shadow-md bg-white relative">
-                    <div>
-                      <img
-                        alt={`${card.title}`}
-                        key={card.title}
-                        src={card.image}
-                        sizes="(max-width: 500px) 100px, 600px"
-                      />
-                    </div>
-                    <div className="inset-8 absolute opacity-0 hover:opacity-100 bg-slate-950 bg-opacity-85 rounded-lg">
-                      <div className="h-full w-full flex flex-col justify-center items-center">
-                        <h1 className="text-white text-centered text-lg font-bold">
-                          {card.title}
-                        </h1>
-                        <p className="text-white text-center text-sm italic">
-                          -
-                        </p>
-                        <div className="w-3/4">
+
+          <div className="max-w-7xl mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+              {cards.map(function (card) {
+                return (
+                  <Link key={card.id} to={card.path}>
+                    <div className="m-4 p-8 border border-gray-100 rounded-lg hover:shadow-md bg-white relative">
+                      <div>
+                        <img
+                          alt={`${card.title}`}
+                          key={card.title}
+                          src={card.image}
+                          sizes="(max-width: 500px) 100px, 600px"
+                        />
+                      </div>
+                      <div className="inset-8 absolute opacity-0 hover:opacity-100 bg-slate-950 bg-opacity-85 rounded-lg">
+                        <div className="h-full w-full flex flex-col justify-center items-center">
+                          <h1 className="text-white text-centered text-lg font-bold">
+                            {card.title}
+                          </h1>
                           <p className="text-white text-center text-sm italic">
-                            {card.tags.join(", ")}
+                            -
                           </p>
+                          <div className="w-3/4">
+                            <p className="text-white text-center text-sm italic">
+                              {card.tags.join(", ")}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              );
-            })}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
+
+          <div className="max-w-7xl mt-16">
+            <div className="flex flex-col text-center">
+              <h1 className="text-2xl font-bold">Experience</h1>
+            </div>
+            <ul role="list" className="space-y-6 mt-4">
+              {experience.map((activityItem) => (
+                <li key={activityItem.id} className="relative flex gap-x-4">
+                  <div className="flex-auto rounded-md p-3">
+                    <div className="flex justify-between gap-x-4">
+                      <div className="py-0.5 text-xs leading-5 text-gray-500">
+                        <span className="font-medium text-gray-900">
+                          {activityItem.title}
+                        </span>
+                      </div>
+                      <time
+                        dateTime={activityItem.date}
+                        className="flex-none py-0.5 text-xs leading-5 text-gray-500"
+                      >
+                        {activityItem.date}
+                      </time>
+                    </div>
+                    <p className="text-sm leading-6 text-gray-500">
+                      {activityItem.description}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="max-w-7xl mt-16">
+            <div className="flex flex-col text-center">
+              <h1 className="text-2xl font-bold">Education</h1>
+            </div>
+            <ul role="list" className="space-y-6 mt-4">
+              {education.map((activityItem) => (
+                <li key={activityItem.id} className="relative flex gap-x-4">
+                  <div className="flex-auto rounded-md p-3">
+                    <div className="flex justify-between gap-x-4">
+                      <div className="py-0.5 text-xs leading-5 text-gray-500">
+                        <span className="font-medium text-gray-900">
+                          {activityItem.title}
+                        </span>
+                      </div>
+                      <time
+                        dateTime={activityItem.date}
+                        className="flex-none py-0.5 text-xs leading-5 text-gray-500"
+                      >
+                        {activityItem.date}
+                      </time>
+                    </div>
+                    <p className="text-sm leading-6 text-gray-500">
+                      {activityItem.description}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="max-w-7xl m-4 flex justify-center">
             <div className="flex flex-col text-center">
               <p className="text-md italic mt-4">
