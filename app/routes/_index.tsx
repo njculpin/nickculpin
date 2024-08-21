@@ -197,12 +197,11 @@ export default function Index() {
                   className="rounded-full w-56 h-56 p-8"
                 />
                 <p className="italic">
-                  "Hey, my name is Nick. Im a software engineer and artist based
-                  in San Francisco, CA. I have domain expertise in product
-                  visualization tools but I also have a strong passion for game
-                  design and development. Im always on the lookout for new and
-                  interesting opportunities across industries. Thanks for
-                  stopping by!" - Nick
+                  “My name is Nick, and I am a software engineer and artist
+                  based in San Francisco, California. I have a specialized
+                  background in product visualization tools, but I am passionate
+                  about game design and development. I am actively seeking new
+                  and exciting opportunities across various industries.” - Nick
                 </p>
               </div>
             </div>
