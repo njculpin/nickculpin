@@ -190,7 +190,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="max-w-7xl mt-16">
+          <div className="max-w-7xl mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
             <div className="flex flex-col text-center">
               <h1 className="text-2xl font-bold">Experience</h1>
             </div>
@@ -220,7 +220,7 @@ export default function Index() {
             </ul>
           </div>
 
-          <div className="max-w-7xl mt-16">
+          <div className="max-w-7xl mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
             <div className="flex flex-col text-center">
               <h1 className="text-2xl font-bold">Education</h1>
             </div>
