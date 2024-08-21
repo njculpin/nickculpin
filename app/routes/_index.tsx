@@ -162,6 +162,7 @@ export default function Index() {
                           key={card.title}
                           src={card.image}
                           sizes="(max-width: 500px) 100px, 600px"
+                          className="rounded-lg"
                         />
                       </div>
                       <div className="inset-8 absolute opacity-0 hover:opacity-100 bg-slate-950 bg-opacity-85 rounded-lg">
@@ -186,8 +187,29 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="max-w-7xl mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
+          <div className="max-w-7xl grid grid-cols-1 gap-8">
+            <div className="mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
+              <div className="flex space-x-6 items-center">
+                <img
+                  alt={"me"}
+                  src={"/me.jpg"}
+                  sizes="(max-width: 500px) 100px, 600px"
+                  className="rounded-full w-56 h-56 p-8"
+                />
+                <p className="italic">
+                  "Hey, my name is Nick. Im a software engineer and artist based
+                  in San Francisco, CA. I have domain expertise in product
+                  visualization tools but I also have a strong passion for game
+                  design and development. Im always on the lookout for new and
+                  interesting opportunities across industries. Thanks for
+                  stopping by!" - Nick
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
               <div className="flex flex-col text-center">
                 <h1 className="text-2xl font-bold">Experience</h1>
               </div>
@@ -217,34 +239,53 @@ export default function Index() {
               </ul>
             </div>
 
-            <div className="max-w-7xl mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
-              <div className="flex flex-col text-center">
-                <h1 className="text-2xl font-bold">Education</h1>
-              </div>
-              <ul role="list" className="space-y-6 mt-4">
-                {education.map((activityItem) => (
-                  <li key={activityItem.id} className="relative flex gap-x-4">
-                    <div className="flex-auto rounded-md p-3">
-                      <div className="flex justify-between gap-x-4">
-                        <div className="py-0.5 text-xs leading-5 text-gray-500">
-                          <span className="font-medium text-gray-900">
-                            {activityItem.title}
-                          </span>
+            <div className="mt-16">
+              <div className="m-4 p-8 border border-gray-100 rounded-lg bg-white">
+                <div className="flex flex-col text-center">
+                  <h1 className="text-2xl font-bold">Education</h1>
+                </div>
+                <ul role="list" className="space-y-6 mt-4">
+                  {education.map((activityItem) => (
+                    <li key={activityItem.id} className="relative flex gap-x-4">
+                      <div className="flex-auto rounded-md p-3">
+                        <div className="flex justify-between gap-x-4">
+                          <div className="py-0.5 text-xs leading-5 text-gray-500">
+                            <span className="font-medium text-gray-900">
+                              {activityItem.title}
+                            </span>
+                          </div>
+                          <time
+                            dateTime={activityItem.date}
+                            className="flex-none py-0.5 text-xs leading-5 text-gray-500"
+                          >
+                            {activityItem.date}
+                          </time>
                         </div>
-                        <time
-                          dateTime={activityItem.date}
-                          className="flex-none py-0.5 text-xs leading-5 text-gray-500"
-                        >
-                          {activityItem.date}
-                        </time>
+                        <p className="text-sm leading-6 text-gray-500">
+                          {activityItem.description}
+                        </p>
                       </div>
-                      <p className="text-sm leading-6 text-gray-500">
-                        {activityItem.description}
-                      </p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="max-w-7xl mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
+                <div className="flex flex-col text-center">
+                  <h1 className="text-2xl font-bold">Skills and Tools</h1>
+                </div>
+                <div className="mt-4">
+                  <p className="text-sm leading-6 text-gray-500">
+                    Typescript, Javascript, Swift, Python, HTML, CSS Express,
+                    NodeJs, ThreeJs, Three Fiber, Serverless, DynamoDB,
+                    PostGres, NestJs, NextJs, Astro, Remix, Vite, React, React
+                    Native, iOS, Tailwind css, Photoshop, Illustrator, Blender,
+                    Maya, Rhino, Unity, Affinity Designer, Google Cloud,
+                    Firebase, AWS, Amplify, Supabase, Ethereum, Polgyon, Aptos,
+                    IPFS
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
