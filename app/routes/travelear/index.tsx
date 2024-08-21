@@ -1,8 +1,8 @@
 import { Bread } from "~/components/bread";
 
 const config = {
-  title: "Rose Creek",
-  href: "/rose-creek",
+  title: "Travelear",
+  href: "/travelear",
 };
 
 export default function Index() {

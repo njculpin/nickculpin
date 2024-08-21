@@ -1,8 +1,8 @@
 import { Bread } from "~/components/bread";
 
 const config = {
-  title: "Rose Creek",
-  href: "/rose-creek",
+  title: "Vector City Racers",
+  href: "/vector-city-racers",
 };
 
 export default function Index() {

@@ -1,8 +1,8 @@
 import { Bread } from "~/components/bread";
 
 const config = {
-  title: "Rose Creek",
-  href: "/rose-creek",
+  title: "Zazzle",
+  href: "/zazzle",
 };
 
 export default function Index() {
