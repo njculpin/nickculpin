@@ -93,7 +93,7 @@ const experience = [
     date: "2015 to 2019",
     type: "work",
     title: "MatchCo Shiseido",
-    description: "Software Engineer, iOS & React Native",
+    description: "Software Engineer",
   },
   {
     id: 2,
@@ -114,7 +114,7 @@ const experience = [
     date: "2010-2011",
     type: "work",
     title: "Vector Entertainment",
-    description: "3D Artist and Designer",
+    description: "3D Artist, Designer",
   },
 ];
 
