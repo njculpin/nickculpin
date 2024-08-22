@@ -46,6 +46,11 @@ export default function Index() {
                     Technical Writing - Cross platform receipt verification
                   </p>
                 </a>
+                <a href="https://github.com/njculpin/Travelear">
+                  <p className="text-sm leading-6 text-gray-500 underline">
+                    Code - Travelear iOS
+                  </p>
+                </a>
               </div>
             </div>
             <div>
