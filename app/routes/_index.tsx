@@ -201,7 +201,7 @@ export default function Index() {
                   based in San Francisco, California. I have a specialized
                   background in product visualization tools, but I am passionate
                   about game design and development. I am actively seeking
-                  design or game engineering opportunities.” - Nick
+                  design engineering opportunities.” - Nick
                 </p>
               </div>
             </div>
