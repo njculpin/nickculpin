@@ -41,6 +41,43 @@ export default function Index() {
               sizes="(max-width: 500px) 100px, 600px"
             />
           </div>
+          <div className="mt-8 grid grid-cols-1 gap-8">
+            <img
+              alt={`vector_levels`}
+              src={"/vector_levels.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`vector_misc`}
+              src={"/vector_misc.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`vector_gridmotors`}
+              src={"/vector_gridmotors.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`vector_massballistic`}
+              src={"/vector_massballistic.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`vector_odonataswift`}
+              src={"/vector_odonataswift.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`vector_switchblade`}
+              src={"/vector_switchblade.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`vector_opterloco`}
+              src={"/vector_opterloco.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+          </div>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <img
               alt={`vector_1`}
