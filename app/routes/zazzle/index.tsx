@@ -43,18 +43,21 @@ export default function Index() {
               <div className="flex flex-col text-center">
                 <h1 className="text-2xl font-bold">Product Systems Engineer</h1>
               </div>
-              <div className="mt-4">
-                <p className="text-sm leading-6 text-gray-500">
-                  At Zazzle, I worked as a Product Systems Engineer. I was a
-                  participating member of the Product Visualization team,
-                  responsible for new product onboarding, product visualization
-                  research and development, as well as production assets.
-                </p>
-                <p className="text-sm leading-6 text-gray-500">
-                  Tools - Agisoft PhotoScan, Autodesk Maya, Rhino 3D, KUKA kR90
-                  Robot, Python, Canon Camera Systems, Rapsberry Pi, and
-                  Proprietary tooling.
-                </p>
+              <div className="flex flex-col justify-between mt-6">
+                <div className="space-y-6">
+                  <p className="text-sm leading-6 text-gray-500">
+                    At Zazzle, I worked as a Product Systems Engineer. I was a
+                    participating member of the Product Visualization team,
+                    responsible for new product onboarding, product
+                    visualization research and development, as well as
+                    production assets.
+                  </p>
+                  <p className="text-sm leading-6 text-gray-500">
+                    Tools - Agisoft PhotoScan, Autodesk Maya, Rhino 3D, KUKA
+                    kR90 Robot, Python, Canon Camera Systems, Rapsberry Pi, and
+                    Proprietary tooling.
+                  </p>
+                </div>
               </div>
             </div>
             <img

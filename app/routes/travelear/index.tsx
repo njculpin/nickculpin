@@ -23,16 +23,36 @@ export default function Index() {
                 </h1>
               </div>
               <div className="flex flex-col justify-between mt-6">
-                <div>
+                <div className="space-y-6">
                   <p className="text-sm leading-6 text-gray-500">
                     Travelear is a company I started with a friend from college
                     who had worked as an Audio Engineer for various television
                     productions. Together we built two applications to showcase
                     professional field recordings from all over the world.
+                  </p>
+                  <p className="text-sm leading-6 text-gray-500">
+                    Travelear: Listen to the World is available on web and iOS.
                     Listeners and contributors could visit different real world
                     locations as a means to travel without needing to ever leave
                     your home.
                   </p>
+                  <a href="https://apps.apple.com/us/app/travelear-listen-to-the-world/id1159408401">
+                    <p className="text-sm leading-6 text-gray-500 underline">
+                      Download Travelear from the App Store
+                    </p>
+                  </a>
+                  <p className="text-sm leading-6 text-gray-500">
+                    Dreamear: Sleep, Relax, Focus is available on iOS. This app
+                    uses the same content found in Travelear itself, however
+                    features control and functionality to zero cross fade for
+                    infinite looping playback and timing functions to reduce
+                    volume over time.
+                  </p>
+                  <a href="https://apps.apple.com/us/app/dreamear-sleep-relax-focus/id1473473909">
+                    <p className="text-sm leading-6 text-gray-500 underline">
+                      Download Dreamear from the App Store
+                    </p>
+                  </a>
                   <p className="text-sm leading-6 text-gray-500">
                     Tools - Swift, iOS, React, Typescript, NextJs, Firebase,
                     Stripe

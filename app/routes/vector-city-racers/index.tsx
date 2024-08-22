@@ -19,16 +19,18 @@ export default function Index() {
               <div className="flex flex-col text-center">
                 <h1 className="text-2xl font-bold">3D Artist</h1>
               </div>
-              <div className="mt-4">
-                <p className="text-sm leading-6 text-gray-500">
-                  Vector City Racers is a top down MMO game for kids. It was
-                  built on a proprietary 3D game engine built in Adobe Flash for
-                  web. I was responsible for level design, vehicle and component
-                  design, 3D modeling and asset management.
-                </p>
-                <p className="text-sm leading-6 text-gray-500">
-                  Tools - Autodesk Maya, Flash, and Proprietary tools
-                </p>
+              <div className="flex flex-col justify-between mt-6">
+                <div className="space-y-6">
+                  <p className="text-sm leading-6 text-gray-500">
+                    Vector City Racers is a top down MMO game for kids. It was
+                    built on a proprietary 3D game engine built in Adobe Flash
+                    for web. I was responsible for level design, vehicle and
+                    component design, 3D modeling and asset management.
+                  </p>
+                  <p className="text-sm leading-6 text-gray-500">
+                    Tools - Autodesk Maya, Flash, and Proprietary tools
+                  </p>
+                </div>
               </div>
             </div>
             <img
