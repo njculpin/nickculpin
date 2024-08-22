@@ -65,6 +65,16 @@ export default function Index() {
                 </div>
               </div>
             </div>
+            <div className="p-8 border border-gray-100 rounded-lg bg-white">
+              <div className="flex flex-col text-center">
+                <h1 className="text-2xl font-bold">How to Play</h1>
+              </div>
+              <div className="flex flex-col justify-between mt-6">
+                <div className="space-y-6">
+                  <p className="text-sm leading-6 text-gray-500"></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
