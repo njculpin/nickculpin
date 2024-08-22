@@ -57,16 +57,18 @@ export default function Index() {
                     kR90 Robot, Python, Mel, Javascript, ThreeJs, Canon Camera
                     Systems, Rapsberry Pi, and Proprietary tooling.
                   </p>
-                  <a href="https://github.com/njculpin/agisoft_photogrametry">
-                    <p className="text-sm leading-6 text-gray-500 underline">
-                      Code - Agisoft Processor
-                    </p>
-                  </a>
-                  <a href="https://github.com/njculpin/maya_scripts">
-                    <p className="text-sm leading-6 text-gray-500 underline">
-                      Code - Maya Toolkit
-                    </p>
-                  </a>
+                  <div className="mt-8">
+                    <a href="https://github.com/njculpin/agisoft_photogrametry">
+                      <p className="text-sm leading-6 text-gray-500 underline">
+                        Code - Agisoft Processor
+                      </p>
+                    </a>
+                    <a href="https://github.com/njculpin/maya_scripts">
+                      <p className="text-sm leading-6 text-gray-500 underline">
+                        Code - Maya Toolkit
+                      </p>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
