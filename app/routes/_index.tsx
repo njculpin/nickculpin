@@ -189,7 +189,7 @@ export default function Index() {
 
           <div className="max-w-7xl grid grid-cols-1 gap-8">
             <div className="mt-16 m-4 p-8 border border-gray-100 rounded-lg bg-white">
-              <div className="flex space-x-6 items-center">
+              <div className="flex flex-col md:flex-row space-x-6 items-center">
                 <img
                   alt={"me"}
                   src={"/me.jpg"}
