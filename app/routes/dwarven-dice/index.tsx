@@ -37,6 +37,33 @@ export default function Index() {
                   </p>
                 </div>
               </div>
+              <div className="mt-8">
+                <a href="https://boardgamegeek.com/boardgame/298235/dwarven-dice">
+                  <p className="text-sm leading-6 text-gray-500 underline">
+                    Board Game Geek
+                  </p>
+                </a>
+                <a href="https://tabletopia.com/games/dwarven-dice">
+                  <p className="text-sm leading-6 text-gray-500 underline">
+                    Play Online - Tabletopia
+                  </p>
+                </a>
+                <a href="https://www.thegamecrafter.com/games/dwarven-dice">
+                  <p className="text-sm leading-6 text-gray-500 underline">
+                    Purchase Physical - The Game Crafter
+                  </p>
+                </a>
+                <a href="https://github.com/njculpin/Dwarven-Dice">
+                  <p className="text-sm leading-6 text-gray-500 underline">
+                    Code - Dwarven Dice ThreeJS WIP
+                  </p>
+                </a>
+                <a href="https://dwarvendice.vercel.app/">
+                  <p className="text-sm leading-6 text-gray-500 underline">
+                    Demo - Dwarven Dice ThreeJS WIP
+                  </p>
+                </a>
+              </div>
             </div>
             <img
               alt={`dwarvendice_box`}
@@ -108,42 +135,6 @@ export default function Index() {
               src={"/dwarvendice_box_2.jpg"}
               sizes="(max-width: 500px) 100px, 600px"
             />
-            <div className="p-8 border border-gray-100 rounded-lg bg-white">
-              <div className="flex flex-col justify-between">
-                <div className="space-y-6">
-                  <div className="flex flex-col text-center">
-                    <h1 className="text-2xl font-bold">How to Play</h1>
-                  </div>
-                  <div className="mt-8">
-                    <a href="https://boardgamegeek.com/boardgame/298235/dwarven-dice">
-                      <p className="text-sm leading-6 text-gray-500 underline">
-                        Board Game Geek
-                      </p>
-                    </a>
-                    <a href="https://tabletopia.com/games/dwarven-dice">
-                      <p className="text-sm leading-6 text-gray-500 underline">
-                        Play Online - Tabletopia
-                      </p>
-                    </a>
-                    <a href="https://www.thegamecrafter.com/games/dwarven-dice">
-                      <p className="text-sm leading-6 text-gray-500 underline">
-                        Purchase Physical - The Game Crafter
-                      </p>
-                    </a>
-                    <a href="https://github.com/njculpin/Dwarven-Dice">
-                      <p className="text-sm leading-6 text-gray-500 underline">
-                        Code - Dwarven Dice ThreeJS WIP
-                      </p>
-                    </a>
-                    <a href="https://dwarvendice.vercel.app/">
-                      <p className="text-sm leading-6 text-gray-500 underline">
-                        Demo - Dwarven Dice ThreeJS WIP
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
