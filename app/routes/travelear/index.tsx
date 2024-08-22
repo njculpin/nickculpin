@@ -1,4 +1,5 @@
 import { Bread } from "~/components/bread";
+import Player from "~/components/audioplayer";
 
 const config = {
   title: "Travelear",
@@ -35,6 +36,16 @@ export default function Index() {
                   Tools - Swift, iOS, React, Typescript, NextJs, Firebase,
                   Stripe
                 </p>
+                <a href="https://medium.com/travelear/streaming-audio-player-in-ios-892601c0cbfd">
+                  <p className="text-sm leading-6 text-gray-500 underline">
+                    Technical Writing - Streaming Audio in iOS
+                  </p>
+                </a>
+                <a href="https://medium.com/travelear/how-to-perform-cross-platform-receipt-verification-using-firebase-cloud-functions-230511a0b007">
+                  <p className="text-sm leading-6 text-gray-500 underline">
+                    Technical Writing - Cross platform receipt verification
+                  </p>
+                </a>
               </div>
             </div>
             <div>
@@ -47,7 +58,9 @@ export default function Index() {
                 <div className="flex flex-col">
                   <p>Travelear: Listen to the World</p>
                   <a href="https://www.thetravelear.com/">
-                    <p>https://www.thetravelear.com</p>
+                    <p className="text-sm leading-6 text-gray-500 underline">
+                      https://www.thetravelear.com
+                    </p>
                   </a>
                 </div>
                 <a href="https://apps.apple.com/us/app/travelear-listen-to-the-world/id1159408401">
@@ -65,12 +78,53 @@ export default function Index() {
                 <div className="flex flex-col">
                   <p>Dreamear: Sleep, Relax, Focus</p>
                   <a href="https://www.thetravelear.com/">
-                    <p>https://www.thetravelear.com</p>
+                    <p className="text-sm leading-6 text-gray-500 underline">
+                      https://www.thetravelear.com
+                    </p>
                   </a>
                 </div>
                 <a href="https://apps.apple.com/us/app/dreamear-sleep-relax-focus/id1473473909">
                   <img alt={`travelear`} src={"/appstore.svg"} />
                 </a>
+              </div>
+            </div>
+            <div className="p-8 border border-gray-100 rounded-lg bg-white">
+              <div className="flex w-full transform text-center text-base transition">
+                <div className="h-full flex flex-col w-full justify-center items-center bg-white px-4 pt-8 pb-8 sm:px-6 sm:pt-8 md:p-6 md:rounded-lg lg:p-8">
+                  <div className="aspect-w-3 aspect-h-2 mb-8">
+                    <img
+                      className="rounded-lg object-cover shadow-lg"
+                      src={
+                        "https://firebasestorage.googleapis.com/v0/b/travelear-fc8b2.appspot.com/o/users%2FEVwm7DMBdFPXAE0wn41ijYErSjW2%2Fimages%2FWaikiki-Beach-Section_Honolulu-Hawaii_192_01132016.jpg?alt=media&token=be9c6aa7-24f7-4e52-be2b-e88449d0ba91"
+                      }
+                      alt=""
+                    />
+                  </div>
+                  <div className="mb-2">
+                    <p className="text-md text-primary font-bold truncate">
+                      Waikiki Beach
+                    </p>
+                    <p className="text-xs text-primary text-gray-500">
+                      By Garett Martocello
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-xs text-primary">Waikiki Beach</p>
+                    <p className="text-xs text-primary truncate">
+                      21.275331, 157.825562
+                    </p>
+                    <p className="text-xs text-primary">January 12, 2016</p>
+                  </div>
+                  <div className="w-full">
+                    <Player
+                      file={
+                        "https://firebasestorage.googleapis.com/v0/b/travelear-fc8b2.appspot.com/o/users%2FEVwm7DMBdFPXAE0wn41ijYErSjW2%2Faudio%2FWaikiki-Beach-Section_Honolulu-Hawaii_192_01132016.mp3?alt=media&token=ce62c14d-9d38-4fc5-94e4-e8c6c12bcf10"
+                      }
+                      duration={"15:36"}
+                      isSleep={false}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
