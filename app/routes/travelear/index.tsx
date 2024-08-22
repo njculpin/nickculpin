@@ -22,35 +22,39 @@ export default function Index() {
                   Founder, Engineering Lead
                 </h1>
               </div>
-              <div className="mt-4">
-                <p className="text-sm leading-6 text-gray-500">
-                  Travelear is a company I started with a friend from college
-                  who had worked as an Audio Engineer for various television
-                  productions. Together we built two applications to showcase
-                  professional field recordings from all over the world.
-                  Listeners and contributors could visit different real world
-                  locations as a means to travel without needing to ever leave
-                  your home.
-                </p>
-                <p className="text-sm leading-6 text-gray-500">
-                  Tools - Swift, iOS, React, Typescript, NextJs, Firebase,
-                  Stripe
-                </p>
-                <a href="https://medium.com/travelear/streaming-audio-player-in-ios-892601c0cbfd">
-                  <p className="text-sm leading-6 text-gray-500 underline">
-                    Technical Writing - Streaming Audio in iOS
+              <div className="flex flex-col justify-between mt-6">
+                <div>
+                  <p className="text-sm leading-6 text-gray-500">
+                    Travelear is a company I started with a friend from college
+                    who had worked as an Audio Engineer for various television
+                    productions. Together we built two applications to showcase
+                    professional field recordings from all over the world.
+                    Listeners and contributors could visit different real world
+                    locations as a means to travel without needing to ever leave
+                    your home.
                   </p>
-                </a>
-                <a href="https://medium.com/travelear/how-to-perform-cross-platform-receipt-verification-using-firebase-cloud-functions-230511a0b007">
-                  <p className="text-sm leading-6 text-gray-500 underline">
-                    Technical Writing - Cross platform receipt verification
+                  <p className="text-sm leading-6 text-gray-500">
+                    Tools - Swift, iOS, React, Typescript, NextJs, Firebase,
+                    Stripe
                   </p>
-                </a>
-                <a href="https://github.com/njculpin/Travelear">
-                  <p className="text-sm leading-6 text-gray-500 underline">
-                    Code - Travelear iOS
-                  </p>
-                </a>
+                </div>
+                <div className="mt-8">
+                  <a href="https://medium.com/travelear/streaming-audio-player-in-ios-892601c0cbfd">
+                    <p className="text-sm leading-6 text-gray-500 underline">
+                      Technical Writing - Streaming Audio in iOS
+                    </p>
+                  </a>
+                  <a href="https://medium.com/travelear/how-to-perform-cross-platform-receipt-verification-using-firebase-cloud-functions-230511a0b007">
+                    <p className="text-sm leading-6 text-gray-500 underline">
+                      Technical Writing - Cross platform receipt verification
+                    </p>
+                  </a>
+                  <a href="https://github.com/njculpin/Travelear">
+                    <p className="text-sm leading-6 text-gray-500 underline">
+                      Code - Travelear iOS
+                    </p>
+                  </a>
+                </div>
               </div>
             </div>
             <div>
