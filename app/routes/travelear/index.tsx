@@ -15,6 +15,28 @@ export default function Index() {
         <div className="max-w-7xl font-sans p-4 flex flex-col justify-center items-center">
           <h1 className="text-3xl">{config.title}</h1>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-8 border border-gray-100 rounded-lg bg-white">
+              <div className="flex flex-col text-center">
+                <h1 className="text-2xl font-bold">
+                  Founder, Engineering Lead
+                </h1>
+              </div>
+              <div className="mt-4">
+                <p className="text-sm leading-6 text-gray-500">
+                  Travelear is a company I started with a friend from college
+                  who had worked as an Audio Engineer for various television
+                  productions. Together we built two applications to showcase
+                  professional field recordings from all over the world.
+                  Listeners and contributors could visit different real world
+                  locations as a means to travel without needing to ever leave
+                  your home.
+                </p>
+                <p className="text-sm leading-6 text-gray-500">
+                  Tools - Swift, iOS, React, Typescript, NextJs, Firebase,
+                  Stripe
+                </p>
+              </div>
+            </div>
             <div>
               <img
                 alt={`travelear`}
