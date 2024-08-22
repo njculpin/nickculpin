@@ -15,16 +15,6 @@ export default function Index() {
         <div className="max-w-7xl font-sans p-4 flex flex-col justify-center items-center">
           <h1 className="text-3xl">{config.title}</h1>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <img
-              alt={`dwarvendice_box`}
-              src={"/dwarvendice_box.jpg"}
-              sizes="(max-width: 500px) 100px, 600px"
-            />
-            <img
-              alt={`dwarvendice_box_2`}
-              src={"/dwarvendice_box_2.jpg"}
-              sizes="(max-width: 500px) 100px, 600px"
-            />
             <div className="p-8 border border-gray-100 rounded-lg bg-white">
               <div className="flex flex-col text-center">
                 <h1 className="text-2xl font-bold">Game Designer, Artist</h1>
@@ -45,6 +35,85 @@ export default function Index() {
                     player's turn ends when they choose to pass or has no more
                     actions to spend.
                   </p>
+                </div>
+              </div>
+            </div>
+            <img
+              alt={`dwarvendice_box`}
+              src={"/dwarvendice_box.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_beer_spend`}
+              src={"/dwarvendice_beer_spend.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_beer_commit`}
+              src={"/dwarvendice_beer_commit.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_horns_spend`}
+              src={"/dwarvendice_horns_spend.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_horns_commit`}
+              src={"/dwarvendice_horns_commit.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_axe_spend`}
+              src={"/dwarvendice_axe_spend.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_axe_commit`}
+              src={"/dwarvendice_axe_commit.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_bomb_spend`}
+              src={"/dwarvendice_bomb_spend.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_bomb_commit`}
+              src={"/dwarvendice_bomb_commit.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_lantner_spend`}
+              src={"/dwarvendice_lantern_spend.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_lantern_commit`}
+              src={"/dwarvendice_lantern_commit.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_head_spend`}
+              src={"/dwarvendice_head_spend.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_head_commit`}
+              src={"/dwarvendice_head_commit.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`dwarvendice_box_2`}
+              src={"/dwarvendice_box_2.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <div className="p-8 border border-gray-100 rounded-lg bg-white">
+              <div className="flex flex-col justify-between">
+                <div className="space-y-6">
+                  <div className="flex flex-col text-center">
+                    <h1 className="text-2xl font-bold">How to Play</h1>
+                  </div>
                   <div className="mt-8">
                     <a href="https://boardgamegeek.com/boardgame/298235/dwarven-dice">
                       <p className="text-sm leading-6 text-gray-500 underline">
@@ -61,17 +130,17 @@ export default function Index() {
                         Purchase Physical - The Game Crafter
                       </p>
                     </a>
+                    <a href="https://github.com/njculpin/Dwarven-Dice">
+                      <p className="text-sm leading-6 text-gray-500 underline">
+                        Code - Dwarven Dice ThreeJS WIP
+                      </p>
+                    </a>
+                    <a href="https://dwarvendice.vercel.app/">
+                      <p className="text-sm leading-6 text-gray-500 underline">
+                        Demo - Dwarven Dice ThreeJS WIP
+                      </p>
+                    </a>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-8 border border-gray-100 rounded-lg bg-white">
-              <div className="flex flex-col text-center">
-                <h1 className="text-2xl font-bold">How to Play</h1>
-              </div>
-              <div className="flex flex-col justify-between mt-6">
-                <div className="space-y-6">
-                  <p className="text-sm leading-6 text-gray-500"></p>
                 </div>
               </div>
             </div>

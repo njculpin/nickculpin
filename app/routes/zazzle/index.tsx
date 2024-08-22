@@ -15,30 +15,6 @@ export default function Index() {
         <div className="max-w-7xl font-sans p-4 flex flex-col justify-center items-center">
           <h1 className="text-3xl">{config.title}</h1>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <video
-              src={"/zazzle_talus_video_1.MOV"}
-              width="600"
-              controls
-              autoPlay
-              loop
-            />
-            <video
-              src={"/zazzle_talus_video_2.MOV"}
-              width="600"
-              controls
-              autoPlay
-              loop
-            />
-            <img
-              alt={`zazzle`}
-              src={"/zazzle_talus.jpg"}
-              sizes="(max-width: 500px) 100px, 600px"
-            />
-            <img
-              alt={`zazzle`}
-              src={"/zazzle_photogram.jpg"}
-              sizes="(max-width: 500px) 100px, 600px"
-            />
             <div className="p-8 border border-gray-100 rounded-lg bg-white">
               <div className="flex flex-col text-center">
                 <h1 className="text-2xl font-bold">Product Systems Engineer</h1>
@@ -72,6 +48,30 @@ export default function Index() {
                 </div>
               </div>
             </div>
+            <video
+              src={"/zazzle_talus_video_1.MOV"}
+              width="600"
+              controls
+              autoPlay
+              loop
+            />
+            <video
+              src={"/zazzle_talus_video_2.MOV"}
+              width="600"
+              controls
+              autoPlay
+              loop
+            />
+            <img
+              alt={`zazzle`}
+              src={"/zazzle_talus.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`zazzle`}
+              src={"/zazzle_photogram.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
             <img
               alt={`zazzle`}
               src={"/zazzle.png"}
@@ -79,12 +79,22 @@ export default function Index() {
             />
             <img
               alt={`zazzle`}
-              src={"/zazzle_rig_hdr.jpg"}
+              src={"/zazzle_talus_hdr.jpg"}
               sizes="(max-width: 500px) 100px, 600px"
             />
             <img
               alt={`zazzle`}
-              src={"/zazzle_talus_hdr.jpg"}
+              src={"/zazzle_heart.png"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`zazzle`}
+              src={"/zazzle_model.png"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`zazzle`}
+              src={"/zazzle_trophy_2.png"}
               sizes="(max-width: 500px) 100px, 600px"
             />
           </div>
