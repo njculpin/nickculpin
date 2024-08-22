@@ -77,8 +77,8 @@ export default function Index() {
                   “My name is Nick, and I am a software engineer and artist
                   based in San Francisco, California. I have a specialized
                   background in product visualization tools, but I am passionate
-                  about game design and development. I am actively seeking
-                  design engineering opportunities.” - Nick
+                  about game design and development. I am actively seeking ar/vr
+                  & design engineering opportunities.” - Nick
                 </p>
               </div>
             </div>
