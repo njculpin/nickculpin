@@ -200,8 +200,8 @@ export default function Index() {
                   “My name is Nick, and I am a software engineer and artist
                   based in San Francisco, California. I have a specialized
                   background in product visualization tools, but I am passionate
-                  about game design and development. I am actively seeking new
-                  and exciting opportunities across various industries.” - Nick
+                  about game design and development. I am actively seeking
+                  design or game engineering opportunities.” - Nick
                 </p>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="max-w-7xl m-4 flex justify-center">
+          <div className="max-w-7xl mt-16 m-4 flex justify-center">
             <div className="flex flex-col text-center">
               <p className="text-md italic mt-4">
                 nickculpin.com copyright {new Date().getFullYear()} all rights
