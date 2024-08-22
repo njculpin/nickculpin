@@ -48,8 +48,20 @@ export default function Index() {
               src={"/zazzle.png"}
               sizes="(max-width: 500px) 100px, 600px"
             />
-            <video src={"/zazzle_talus_video_1.MOV"} width="600" controls />
-            <video src={"/zazzle_talus_video_2.MOV"} width="600" controls />
+            <video
+              src={"/zazzle_talus_video_1.MOV"}
+              width="600"
+              controls
+              autoPlay
+              loop
+            />
+            <video
+              src={"/zazzle_talus_video_2.MOV"}
+              width="600"
+              controls
+              autoPlay
+              loop
+            />
           </div>
         </div>
       </div>
