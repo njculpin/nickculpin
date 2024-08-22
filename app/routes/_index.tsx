@@ -62,7 +62,15 @@ const cards = [
     title: "Zazzle",
     image: "/zazzle.png",
     path: "/zazzle",
-    tags: ["Python", "Maya", "Rhino", "Photoscan", "Kuka Robotics"],
+    tags: [
+      "Python",
+      "ThreeJs",
+      "Javascript",
+      "Maya",
+      "Rhino",
+      "Photoscan",
+      "Kuka Robotics",
+    ],
   },
   {
     id: 5,
