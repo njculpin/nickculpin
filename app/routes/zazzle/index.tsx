@@ -75,6 +75,16 @@ export default function Index() {
               src={"/zazzle.png"}
               sizes="(max-width: 500px) 100px, 600px"
             />
+            <img
+              alt={`zazzle`}
+              src={"/zazzle_rig_hdr.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
+            <img
+              alt={`zazzle`}
+              src={"/zazzle_talus_hdr.jpg"}
+              sizes="(max-width: 500px) 100px, 600px"
+            />
           </div>
         </div>
       </div>
