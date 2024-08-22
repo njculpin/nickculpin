@@ -54,8 +54,8 @@ export default function Index() {
                   </p>
                   <p className="text-sm leading-6 text-gray-500">
                     Tools - Agisoft PhotoScan, Autodesk Maya, Rhino 3D, KUKA
-                    kR90 Robot, Python, Canon Camera Systems, Rapsberry Pi, and
-                    Proprietary tooling.
+                    kR90 Robot, Python, Mel, Javascript, ThreeJs, Canon Camera
+                    Systems, Rapsberry Pi, and Proprietary tooling.
                   </p>
                   <a href="https://github.com/njculpin/agisoft_photogrametry">
                     <p className="text-sm leading-6 text-gray-500 underline">
