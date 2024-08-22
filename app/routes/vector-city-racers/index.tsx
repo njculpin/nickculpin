@@ -15,6 +15,22 @@ export default function Index() {
         <div className="max-w-7xl font-sans p-4 flex flex-col justify-center items-center">
           <h1 className="text-3xl">{config.title}</h1>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-8 border border-gray-100 rounded-lg bg-white">
+              <div className="flex flex-col text-center">
+                <h1 className="text-2xl font-bold">3D Artist</h1>
+              </div>
+              <div className="mt-4">
+                <p className="text-sm leading-6 text-gray-500">
+                  Vector City Racers is a top down MMO game for kids. It was
+                  built on a proprietary 3D game engine built in Adobe Flash for
+                  web. I was responsible for level design, vehicle and component
+                  design, 3D modeling and asset management.
+                </p>
+                <p className="text-sm leading-6 text-gray-500">
+                  Tools - Autodesk Maya, Flash, and Proprietary tools
+                </p>
+              </div>
+            </div>
             <img
               alt={`vector_gm_car`}
               src={"/vector_gm_car.jpg"}
