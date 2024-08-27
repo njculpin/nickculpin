@@ -7,7 +7,7 @@ const config = {
 
 export default function Index() {
   return (
-    <div className="p-8 bg-slate-100">
+    <div className="p-8 bg-zinc-100">
       <Bread
         pages={[{ name: config.title, href: config.href, current: true }]}
       />

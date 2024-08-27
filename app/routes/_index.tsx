@@ -14,7 +14,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="p-8 bg-slate-100">
+    <div className="p-8 bg-zinc-100">
       <div className="flex justify-center">
         <div className="font-sans p-4 grid grid-cols-1">
           <div className="max-w-7xl m-4 flex justify-center">
@@ -42,7 +42,7 @@ export default function Index() {
                           className="rounded-lg"
                         />
                       </div>
-                      <div className="inset-8 absolute opacity-0 hover:opacity-100 bg-slate-950 bg-opacity-85 rounded-lg">
+                      <div className="inset-8 absolute opacity-0 hover:opacity-100 bg-zinc-950 bg-opacity-85 rounded-lg">
                         <div className="h-full w-full flex flex-col justify-center items-center">
                           <h1 className="text-white text-centered text-lg font-bold">
                             {card.title}
