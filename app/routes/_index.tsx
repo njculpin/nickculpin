@@ -17,17 +17,17 @@ export default function Index() {
     <div className="p-8 bg-zinc-100">
       <div className="flex justify-center">
         <div className="font-sans p-4 grid grid-cols-1">
-          <div className="max-w-7xl m-4 flex justify-center">
-            <div className="flex flex-col text-center">
+          <div className="max-w-7xl m-4">
+            <div className="flex flex-col text-left">
               <h1 className="text-4xl font-bold">Nick Culpin</h1>
-              <p className="text-md italic mt-4">
-                Software Engineer, Game Designer, Artist
+              <p className="text-md italic mt-2">
+                Software Engineer, Game Designer, Artist based in San Francisco,
+                CA.
               </p>
-              <Socials />
             </div>
           </div>
 
-          <div className="max-w-7xl mt-8">
+          <div className="max-w-7xl mt-4">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
               {cards.map(function (card) {
                 return (
@@ -77,8 +77,8 @@ export default function Index() {
                   “My name is Nick, and I am a software engineer and artist
                   based in San Francisco, California. I have a specialized
                   background in product visualization tools, but I am passionate
-                  about game design and development. I am actively seeking ar/vr
-                  & design engineering opportunities.” - Nick
+                  about game design and development. I am actively seeking
+                  design engineering opportunities.” - Nick
                 </p>
               </div>
             </div>
@@ -165,6 +165,7 @@ export default function Index() {
           </div>
 
           <div className="max-w-7xl mt-16 m-4 flex justify-center">
+            <Socials />
             <div className="flex flex-col text-center">
               <p className="text-md italic mt-4">
                 nickculpin.com copyright {new Date().getFullYear()} all rights
