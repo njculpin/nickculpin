@@ -24,14 +24,20 @@ function Box({
     >
       <boxGeometry args={[1, 1, 1]} />
       <MeshTransmissionMaterial
-        thickness={2}
-        envMapIntensity={5}
+        thickness={0.5}
+        envMapIntensity={0.7}
         resolution={128}
-        samples={16}
-        roughness={1}
-        transmission={1}
-        metalness={1}
-        color={on ? "hotpink" : "gray"}
+        samples={32}
+        roughness={0.55}
+        transparent={false}
+        transmission={1.3}
+        temporalDistortion={0.5}
+        attenuationColor={"white"}
+        attenuationDistance={0.5}
+        clearcoat={0.05}
+        color={on ? "hotpink" : "darkgray"}
+        ior={1.5}
+        backside={false}
       />
     </mesh>
   );
