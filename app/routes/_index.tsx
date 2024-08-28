@@ -183,7 +183,7 @@ const cards = [
   {
     id: 0,
     title: "Lights Out",
-    image: "/sunsetcity.jpg",
+    image: "/lightsout.png",
     path: "/lights-out",
     tags: ["Typescript", "ThreeJs", "Three-Fiber", "React", "Game Design"],
   },
