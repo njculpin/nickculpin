@@ -1,7 +1,12 @@
 import { Vector3, Mesh } from "three";
 import { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { ContactShadows, Environment, Center } from "@react-three/drei";
+import {
+  ContactShadows,
+  Environment,
+  Center,
+  MeshTransmissionMaterial,
+} from "@react-three/drei";
 
 function Box({
   position,
@@ -12,29 +17,26 @@ function Box({
   on: boolean;
   setOnOff: () => void;
 }) {
-  const [clicked, setClicked] = useState(false);
   const meshRef = useRef<Mesh>(null!);
-
-  useFrame(() => {
-    if (clicked) {
-      meshRef.current.position.y -= 0.4;
-      setOnOff();
-      setClicked(false);
-    } else {
-      meshRef.current.position.y = 0;
-    }
-  });
-
   return (
     <mesh
       position={position}
       ref={meshRef}
-      onClick={() => setClicked(true)}
+      onClick={() => setOnOff()}
       scale={1}
       castShadow
     >
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={on ? "hotpink" : "#2f74c0"} />
+      <MeshTransmissionMaterial
+        resolution={128}
+        samples={16}
+        thickness={0.01}
+        roughness={1}
+        envMapIntensity={1}
+        transmission={1}
+        metalness={1}
+        color={on ? "hotpink" : "#2f74c0"}
+      />
     </mesh>
   );
 }
