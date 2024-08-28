@@ -181,6 +181,13 @@ export default function Index() {
 
 const cards = [
   {
+    id: 0,
+    title: "Lights Out",
+    image: "/sunsetcity.jpg",
+    path: "/lights-out",
+    tags: ["Typescript", "ThreeJs", "Three-Fiber", "React", "Game Design"],
+  },
+  {
     id: 1,
     title: "Sunset City Racers",
     image: "/sunsetcity.jpg",
