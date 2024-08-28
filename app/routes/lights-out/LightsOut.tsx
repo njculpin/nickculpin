@@ -28,11 +28,11 @@ function Box({
     >
       <boxGeometry args={[1, 1, 1]} />
       <MeshTransmissionMaterial
+        thickness={2}
+        envMapIntensity={5}
         resolution={128}
         samples={16}
-        thickness={0.01}
         roughness={1}
-        envMapIntensity={1}
         transmission={1}
         metalness={1}
         color={on ? "hotpink" : "#2f74c0"}
@@ -152,7 +152,7 @@ export function LightsOut() {
       <ContactShadows
         frames={1}
         position={[0, -0.5, 0]}
-        scale={10}
+        scale={5}
         opacity={0.4}
         far={1}
         blur={2}
