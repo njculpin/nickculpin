@@ -54,10 +54,10 @@ function Buttons() {
         let newX = clickedCell.x + direction[0];
         let newY = clickedCell.y + direction[1];
         if (
-          newX > 0 &&
-          newX < buttons.length &&
-          newY > 0 &&
-          newY < buttons.length
+          newX >= 0 &&
+          newX <= buttons.length - 1 &&
+          newY >= 0 &&
+          newY <= buttons.length - 1
         ) {
           let adj = buttons[newX][newY];
           adj.on = adj.on ? false : true;
