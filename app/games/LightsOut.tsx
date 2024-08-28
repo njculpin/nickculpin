@@ -20,6 +20,7 @@ function Box({
       onClick={() => setOnOff()}
       scale={1}
       castShadow
+      receiveShadow
     >
       <boxGeometry args={[1, 1, 1]} />
       <MeshTransmissionMaterial
@@ -30,7 +31,7 @@ function Box({
         roughness={1}
         transmission={1}
         metalness={1}
-        color={on ? "hotpink" : "#2f74c0"}
+        color={on ? "hotpink" : "gray"}
       />
     </mesh>
   );
