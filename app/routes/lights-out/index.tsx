@@ -32,7 +32,7 @@ export default function Index() {
               </div>
             </div>
             <div className="bg-white lg:min-w-0 lg:flex-1">
-              <div className="h-full py-6 px-4 sm:px-6 lg:px-8">
+              <div className="h-full">
                 <div className="relative h-full" style={{ minHeight: "36rem" }}>
                   <LightsOut />
                 </div>

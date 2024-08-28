@@ -18,7 +18,7 @@ function Box({
       position={position}
       ref={meshRef}
       onClick={() => setOnOff()}
-      scale={on ? 1.5 : 1}
+      scale={on ? 1.1 : 1}
       castShadow
     >
       <boxGeometry args={[1, 1, 1]} />
