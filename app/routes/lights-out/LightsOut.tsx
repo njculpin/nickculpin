@@ -12,13 +12,25 @@ function Box({
   on: boolean;
   setOnOff: () => void;
 }) {
+  const [clicked, setClicked] = useState(false);
   const meshRef = useRef<Mesh>(null!);
+
+  useFrame(() => {
+    if (clicked) {
+      meshRef.current.position.y -= 0.4;
+      setOnOff();
+      setClicked(false);
+    } else {
+      meshRef.current.position.y = 0;
+    }
+  });
+
   return (
     <mesh
       position={position}
       ref={meshRef}
-      onClick={() => setOnOff()}
-      scale={on ? 1.1 : 1}
+      onClick={() => setClicked(true)}
+      scale={1}
       castShadow
     >
       <boxGeometry args={[1, 1, 1]} />
@@ -118,7 +130,11 @@ function Buttons() {
 
 export function LightsOut() {
   return (
-    <Canvas shadows camera={{ position: [0, 25, 5], fov: 25 }}>
+    <Canvas
+      dpr={[1, 2]}
+      orthographic
+      camera={{ position: [-30, 30, 30], zoom: 50 }}
+    >
       <ambientLight intensity={0.5} />
       <spotLight
         position={[10, 10, 10]}
@@ -130,14 +146,15 @@ export function LightsOut() {
       <Center>
         <Buttons />
       </Center>
-      <ContactShadows
-        position={[0, -1.4, 0]}
-        opacity={0.75}
-        scale={10}
-        blur={3}
-        far={4}
-      />
       <Environment preset="city" />
+      <ContactShadows
+        frames={1}
+        position={[0, -0.5, 0]}
+        scale={10}
+        opacity={0.4}
+        far={1}
+        blur={2}
+      />
     </Canvas>
   );
 }
