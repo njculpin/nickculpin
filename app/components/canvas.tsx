@@ -22,7 +22,7 @@ export function MyCanvas({ children }: { children: React.ReactNode }) {
       <ambientLight intensity={0.5} />
       <spotLight position={[30, 30, 30]} angle={0.15} penumbra={1} />
       <Environment preset="city" />
-      <Suspense>
+      <Suspense fallback={<span>loading...</span>}>
         <Center>{children}</Center>
       </Suspense>
     </Canvas>
