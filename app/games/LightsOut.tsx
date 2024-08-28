@@ -1,13 +1,7 @@
 import { Vector3, Mesh } from "three";
 import { useRef, useState, useEffect } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import {
-  ContactShadows,
-  Environment,
-  Center,
-  MeshTransmissionMaterial,
-  OrbitControls,
-} from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
+import { MeshTransmissionMaterial } from "@react-three/drei";
 
 function Box({
   position,
@@ -48,7 +42,7 @@ type ButtonType = {
   position: number[];
 };
 
-function Buttons() {
+export function LightsOut({ position }: { position: Vector3 }) {
   const [buttons, setButtons] = useState<ButtonType[][]>([]);
   const [clickedCell, setClickedCell] = useState({ x: 0, y: 0 });
   const [clicked, setClicked] = useState(false);
@@ -115,50 +109,22 @@ function Buttons() {
     setClicked(true);
   }
 
-  return buttons.map(function (col, x) {
-    return col.map(function (box, y) {
-      return (
-        <Box
-          key={box.id}
-          setOnOff={() => handlePress({ x: x, y: y })}
-          on={box.on}
-          position={
-            new Vector3(box.position[0], box.position[1], box.position[2])
-          }
-        />
-      );
-    });
-  });
-}
-
-export function LightsOut() {
   return (
-    <Canvas
-      dpr={[1, 2]}
-      orthographic
-      camera={{ position: [-30, 30, 30], zoom: 50 }}
-    >
-      <OrbitControls />
-      <ambientLight intensity={0.5} />
-      <spotLight
-        position={[10, 10, 10]}
-        angle={0}
-        penumbra={1}
-        shadow-mapSize={2048}
-        castShadow
-      />
-      <Center>
-        <Buttons />
-      </Center>
-      <Environment preset="city" />
-      <ContactShadows
-        frames={1}
-        position={[0, -0.5, 0]}
-        scale={5}
-        opacity={0.4}
-        far={1}
-        blur={2}
-      />
-    </Canvas>
+    <group position={position}>
+      {buttons.map(function (col, x) {
+        return col.map(function (box, y) {
+          return (
+            <Box
+              key={box.id}
+              setOnOff={() => handlePress({ x: x, y: y })}
+              on={box.on}
+              position={
+                new Vector3(box.position[0], box.position[1], box.position[2])
+              }
+            />
+          );
+        });
+      })}
+    </group>
   );
 }
