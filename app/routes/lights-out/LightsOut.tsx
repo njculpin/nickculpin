@@ -6,6 +6,7 @@ import {
   Environment,
   Center,
   MeshTransmissionMaterial,
+  OrbitControls,
 } from "@react-three/drei";
 
 function Box({
@@ -137,6 +138,7 @@ export function LightsOut() {
       orthographic
       camera={{ position: [-30, 30, 30], zoom: 50 }}
     >
+      <OrbitControls />
       <ambientLight intensity={0.5} />
       <spotLight
         position={[10, 10, 10]}
