@@ -16,9 +16,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="h-screen w-screen bg-zinc-100">
+    <div className="h-screen w-screen bg-white">
       <MyCanvas>
-        <MapControls />
+        <MapControls enableZoom={false} />
         <LightsOut position={new Vector3(0, 0, 0)} />
       </MyCanvas>
     </div>
