@@ -24,10 +24,6 @@ export default function Index() {
                     Simply picking a cell will toggle it and its adjacent cells.
                     The objective of this game is to turn off all the lights.
                   </p>
-                  <p className="text-sm leading-6 text-gray-500">
-                    This project was build in ThreeJs and developed to explore
-                    shader systems within WebGL.
-                  </p>
                 </div>
               </div>
             </div>
