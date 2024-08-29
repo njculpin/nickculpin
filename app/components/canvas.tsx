@@ -9,16 +9,6 @@ export function MyCanvas({ children }: { children: React.ReactNode }) {
       orthographic
       camera={{ position: [-30, 30, 30], zoom: 50 }}
     >
-      <Grid
-        position={[1, -1, 0]}
-        cellColor={"#6f6f6f"}
-        cellSize={1}
-        sectionThickness={0}
-        fadeDistance={150}
-        fadeStrength={1}
-        followCamera={true}
-        infiniteGrid={true}
-      />
       <Environment preset="night" />
       <Suspense fallback={<span>loading...</span>}>
         <Center>{children}</Center>
