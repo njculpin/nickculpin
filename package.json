@@ -15,6 +15,7 @@
     "@react-three/drei": "^9.111.3",
     "@react-three/fiber": "^8.17.6",
     "@react-three/postprocessing": "^2.16.2",
+    "@react-three/rapier": "^1.4.0",
     "@remix-run/node": "^2.11.2",
     "@remix-run/react": "^2.11.2",
     "@remix-run/serve": "^2.11.2",

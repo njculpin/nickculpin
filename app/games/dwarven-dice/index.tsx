@@ -1,11 +1,12 @@
 import { Vector3 } from "three";
-import { MapControls, Loader, Center, Environment } from "@react-three/drei";
-import { LightsOutGame } from "./LightsOutGame";
+import { MapControls, Loader, Environment } from "@react-three/drei";
+import { Physics } from "@react-three/rapier";
+import { DwarvenDiceGame } from "./DwarvenDiceGame";
 import { Socials } from "~/components/socials";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 
-export default function LightsOut() {
+export default function DwarvenDice() {
   return (
     <div className="h-screen w-screen bg-zinc-900">
       <Canvas
@@ -13,13 +14,13 @@ export default function LightsOut() {
         orthographic
         camera={{ position: [-30, 30, 30], zoom: 50 }}
       >
-        <Environment preset="forest" />
-        <Center>
-          <Suspense fallback={null}>
+        <Environment preset="night" />
+        <Suspense fallback={null}>
+          <Physics gravity={[0, -30, 0]}>
             <MapControls enableZoom={false} enableRotate={false} />
-            <LightsOutGame position={new Vector3(0, 0, 0)} />
-          </Suspense>
-        </Center>
+            <DwarvenDiceGame position={new Vector3(0, 0, 0)} />
+          </Physics>
+        </Suspense>
       </Canvas>
       <Loader />
       <div className="absolute z-10 bottom-4 right-4">
