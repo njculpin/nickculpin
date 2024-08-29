@@ -37,7 +37,8 @@ function Box({
           chromaticAberration={0.01}
           anisotropy={1}
           distortion={1}
-          distortionScale={1}
+          distortionScale={5}
+          temporalDistortion={1}
           clearcoat={1}
           attenuationDistance={1}
           attenuationColor={on ? "darkred" : "black"}
@@ -56,8 +57,13 @@ function Box({
       </mesh>
       <pointLight
         color="hotpink"
-        intensity={on ? 100 : 0}
-        position={new Vector3(position.x, 0.95, position.z)}
+        intensity={on ? 1000 : 0}
+        position={new Vector3(position.x, -0.1, position.z)}
+      />
+      <pointLight
+        color="hotpink"
+        intensity={on ? 50 : 0}
+        position={new Vector3(position.x, 1.4, position.z)}
       />
     </group>
   );
