@@ -30,7 +30,7 @@ export function Socials() {
     <div className="flex flex-row space-x-4 p-4 justify-center">
       {socials.map(function (social) {
         return (
-          <a key={social.id} href={social.href}>
+          <a key={social.id} href={social.href} target="_blank">
             <div className="w-6 h-6">
               <img alt={`${social.id}`} src={social.image} />
             </div>
