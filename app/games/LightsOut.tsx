@@ -1,7 +1,8 @@
-import { Vector3, Mesh } from "three";
+import { Vector3, Mesh, Color } from "three";
 import { useRef, useState, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
-import { MeshTransmissionMaterial } from "@react-three/drei";
+import { MeshTransmissionMaterial, Plane } from "@react-three/drei";
+import { FakeGlowMaterial } from "./shaders/FakeGlowMaterial";
 
 function Box({
   position,
@@ -14,32 +15,51 @@ function Box({
 }) {
   const meshRef = useRef<Mesh>(null!);
   return (
-    <mesh
-      position={position}
-      ref={meshRef}
-      onClick={() => setOnOff()}
-      scale={1}
-      castShadow
-      receiveShadow
-    >
-      <boxGeometry args={[1, 1, 1]} />
-      <MeshTransmissionMaterial
-        thickness={0.5}
-        envMapIntensity={0.7}
-        resolution={128}
-        samples={32}
-        roughness={0.55}
-        transparent={false}
-        transmission={1.3}
-        temporalDistortion={0.5}
-        attenuationColor={"white"}
-        attenuationDistance={0.5}
-        clearcoat={0.05}
-        color={on ? "hotpink" : "darkgray"}
-        ior={1.5}
-        backside={false}
+    <group>
+      <mesh
+        position={position}
+        ref={meshRef}
+        onClick={() => setOnOff()}
+        scale={1}
+        castShadow
+        receiveShadow
+      >
+        <boxGeometry args={[1, 1, 1]} />
+        <MeshTransmissionMaterial
+          transmissionSampler={false}
+          backside={false}
+          samples={10}
+          resolution={56}
+          transmission={1}
+          roughness={0.3}
+          thickness={1.5}
+          ior={1.5}
+          chromaticAberration={0.01}
+          anisotropy={1}
+          distortion={1}
+          distortionScale={1}
+          clearcoat={1}
+          attenuationDistance={1}
+          attenuationColor={on ? "darkred" : "black"}
+          background={new Color(on ? "hotpink" : "black")}
+          reflectivity={0.1}
+        />
+      </mesh>
+      <mesh position={new Vector3(position.x, -0.6, position.z)}>
+        <sphereGeometry args={[1, 1, 1]} />
+        <FakeGlowMaterial
+          glowColor={"hotpink"}
+          falloff={on ? 1 : 100}
+          glowInternalRadius={10}
+          glowSharpness={0.1}
+        />
+      </mesh>
+      <pointLight
+        color="hotpink"
+        intensity={on ? 100 : 0}
+        position={new Vector3(position.x, 0.95, position.z)}
       />
-    </mesh>
+    </group>
   );
 }
 
