@@ -38,7 +38,6 @@ function Box({
           anisotropy={1}
           distortion={1}
           distortionScale={5}
-          temporalDistortion={1}
           clearcoat={1}
           attenuationDistance={1}
           attenuationColor={on ? "darkred" : "black"}
