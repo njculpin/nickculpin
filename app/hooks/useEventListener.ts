@@ -1,10 +1,11 @@
 // source: https://usehooks-ts.com/react-hook/use-event-listener
 
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 
 import type { RefObject } from "react";
 
-import { useIsoMorphicLayoutEffect } from "./useIsoMorphicLayoutEffect";
+export const useIsoMorphicLayoutEffect =
+  typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 // MediaQueryList Event based useEventListener interface
 function useEventListener<K extends keyof MediaQueryListEventMap>(
