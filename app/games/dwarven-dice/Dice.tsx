@@ -281,7 +281,7 @@ function Pieces({ exploded }: { exploded: boolean }) {
   const D23 = useRef<RapierRigidBody>(null);
 
   return (
-    <group ref={piecesGroup} visible={exploded}>
+    <group ref={piecesGroup} visible={exploded} castShadow receiveShadow>
       <RigidBody
         type={exploded ? "dynamic" : "fixed"}
         ref={D0}

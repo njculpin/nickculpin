@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Euler, Vector3 } from "three";
-import { Stage } from "@react-three/drei";
+
 import { Dice } from "./Dice";
 import { BoxContainer } from "./BoxContainer";
 import { useEventListener } from "~/hooks/useEventListener";
@@ -54,16 +54,6 @@ export function DwarvenDiceGame({ position }: { position: Vector3 }) {
 
   return (
     <group position={position}>
-      <group>
-        <Stage
-          preset="soft"
-          shadows="contact"
-          environment="sunset"
-          adjustCamera={false}
-        >
-          <mesh castShadow />
-        </Stage>
-      </group>
       <group>
         {[
           { id: 1, position: new Vector3(-2.5, 1, -2.5) },

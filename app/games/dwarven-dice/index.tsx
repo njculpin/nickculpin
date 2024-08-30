@@ -14,7 +14,7 @@ export default function DwarvenDice() {
         orthographic
         camera={{ position: [-30, 30, 30], zoom: 50 }}
       >
-        <Environment preset="night" />
+        <Environment preset="forest" />
         <Suspense fallback={null}>
           <Physics gravity={[0, -30, 0]}>
             <MapControls enableZoom={false} enableRotate={false} />

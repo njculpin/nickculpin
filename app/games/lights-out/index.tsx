@@ -22,9 +22,6 @@ export default function LightsOut() {
         </Center>
       </Canvas>
       <Loader />
-      <div className="absolute z-10 bottom-4 right-4">
-        <Socials />
-      </div>
     </div>
   );
 }
