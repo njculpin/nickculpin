@@ -13,5 +13,5 @@ import { useEffect, useLayoutEffect } from "react";
  * }, [dependency1, dependency2]);
  * ```
  */
-export const useIsomorphicLayoutEffect =
+export const useIsoMorphicLayoutEffect =
   typeof window !== "undefined" ? useLayoutEffect : useEffect;

@@ -25,7 +25,12 @@ export function NavBar() {
       {socials.map(function (social) {
         return (
           <Link to={social.href}>
-            <div className={classNames("w-6 h-6 rounded-full", social.color)} />
+            <div
+              className={classNames(
+                "w-6 h-6 rounded-full shadow-lg",
+                social.color
+              )}
+            />
           </Link>
         );
       })}

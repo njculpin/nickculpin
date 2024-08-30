@@ -12,9 +12,9 @@ export default function DwarvenDice() {
       <Canvas
         dpr={[1, 2]}
         orthographic
-        camera={{ position: [-30, 30, 30], zoom: 50 }}
+        camera={{ position: [-30, 30, 30], zoom: 45 }}
       >
-        <Environment preset="forest" />
+        <Environment preset="sunset" />
         <Suspense fallback={null}>
           <Physics gravity={[0, -30, 0]}>
             <MapControls enableZoom={false} enableRotate={false} />
