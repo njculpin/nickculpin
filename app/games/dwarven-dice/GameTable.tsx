@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Euler, Vector3 } from "three";
-
-import { Dice } from "./Dice";
-import { BoxContainer } from "./BoxContainer";
+import { Dice } from "./components/Dice";
+import { BoxContainer } from "./components/BoxContainer";
 import { useEventListener } from "~/hooks/useEventListener";
 
 export function DwarvenDiceGame({ position }: { position: Vector3 }) {
@@ -18,35 +17,12 @@ export function DwarvenDiceGame({ position }: { position: Vector3 }) {
     }, 2000);
   }, [rolling]);
 
-  useEventListener("click", handleClick);
-  function handleClick(e: UIEvent) {
-    console.log("hit");
-    switch (e.detail) {
-      case 1:
-        break;
-      case 2:
-        handleRoll();
-        break;
-      case 3:
-        break;
+  useEventListener("click", (e) => {
+    if (e.detail === 2) {
+      setRolling(true);
     }
-  }
+  });
 
-  function handleTap() {
-    const date = new Date();
-    const time = date.getTime();
-    const time_between_taps = 200;
-    if (time - lastTap < time_between_taps) {
-      if (rolls > 0) {
-        handleRoll();
-      }
-    }
-    setLastTap(time);
-  }
-
-  function handleRoll() {
-    setRolling(true);
-  }
   function handlePickDie(face: string, dieId: number) {}
   function checkIfExploded(id: number) {
     return false;

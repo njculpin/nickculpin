@@ -212,7 +212,7 @@ export function Dice({
   }
 
   return (
-    <group>
+    <group castShadow>
       <group position={position} rotation={rotation} ref={originGroup}>
         <RigidBody
           type="dynamic"

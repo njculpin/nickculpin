@@ -24,7 +24,7 @@ export function NavBar() {
     <div className="flex flex-row space-x-4 p-4 justify-center">
       {socials.map(function (social) {
         return (
-          <Link to={social.href}>
+          <Link key={social.id} to={social.href}>
             <div
               className={classNames(
                 "w-6 h-6 rounded-full shadow-lg",
