@@ -38,6 +38,11 @@ export default function Index() {
                       Blog
                     </p>
                   </a>
+                  <a href="https://www.sunsetcityracers.com/vehicles/create">
+                    <p className="text-sm leading-6 text-gray-500 underline">
+                      Vehicle Editor
+                    </p>
+                  </a>
                   <Link to={"/vector-city-racers"}>
                     <p className="text-sm leading-6 text-gray-500 underline">
                       Vector City Racers
