@@ -7,7 +7,7 @@ import { Canvas } from "@react-three/fiber";
 
 export default function LightsOut() {
   return (
-    <div className="h-screen w-screen bg-zinc-900">
+    <>
       <Canvas
         dpr={[1, 2]}
         orthographic
@@ -22,6 +22,6 @@ export default function LightsOut() {
         </Center>
       </Canvas>
       <Loader />
-    </div>
+    </>
   );
 }
