@@ -220,7 +220,7 @@ export function Dice({
           ref={origin}
           collisionGroups={interactionGroups(0, [0])}
           mass={1000}
-          friction={0.2}
+          friction={1}
           linearDamping={0.2}
         >
           <mesh

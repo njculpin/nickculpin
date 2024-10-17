@@ -3,13 +3,15 @@ import { Euler, Vector3 } from "three";
 import { Dice } from "./components/Dice";
 import { BoxContainer } from "./components/BoxContainer";
 import { useEventListener } from "~/hooks/useEventListener";
+import { Mine } from "./components/Mine";
+import { Belt } from "./components/Belt";
 
-export function DwarvenDiceGame({ position }: { position: Vector3 }) {
+export function GameTable({ position }: { position: Vector3 }) {
   const [reset, setReset] = useState(false);
   const [selectedDieId, setSelectedDieId] = useState(0);
   const [rolling, setRolling] = useState(false);
   const [rolls, setRolls] = useState(0);
-  const [lastTap, setLastTap] = useState(0);
+  const [hovered, hover] = useState(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -30,6 +32,9 @@ export function DwarvenDiceGame({ position }: { position: Vector3 }) {
 
   return (
     <group position={position}>
+      <Mine />
+      <Belt />
+      {/*       
       <group>
         {[
           { id: 1, position: new Vector3(-2.5, 1, -2.5) },
@@ -57,7 +62,7 @@ export function DwarvenDiceGame({ position }: { position: Vector3 }) {
           );
         })}
       </group>
-      <BoxContainer />
+      <BoxContainer /> */}
     </group>
   );
 }
