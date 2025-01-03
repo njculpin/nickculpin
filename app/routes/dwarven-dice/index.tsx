@@ -58,11 +58,6 @@ export default function Index() {
                     Code - Dwarven Dice ThreeJS WIP
                   </p>
                 </a>
-                <a href="https://dwarvendice.vercel.app/">
-                  <p className="text-sm leading-6 text-gray-500 underline">
-                    Demo - Dwarven Dice ThreeJS WIP
-                  </p>
-                </a>
               </div>
             </div>
             <img
